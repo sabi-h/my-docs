@@ -35,8 +35,29 @@
 - `pipenv install`
 
 
+### Check security vulnerablities
+- `pipenv check`
+
+
+### Lock the exact dependencies for Production
+Once you're done testing, you want to specify exact version of library, for production. That is what Pipfile.lock is for.
+- `pipenv lock`
+
+
+### Install dependencies using Pipfile.lock
+- `pipenv install --ignore-pipfile`
+
+
+### Enviornment variables are auto-loaded by pipenv, using .env file
+- Create `.env` file in project root, and pipenv will load them
+
+
+### Dependency Graph
+`pipenv graph`
+
+
 ### Output dependencies to requirments.txt
-`pipenv lock -r`
+`pipenv lock -r > requirments.txt`
 
 
 #### Explaination
