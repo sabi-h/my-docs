@@ -1,5 +1,22 @@
 # python-docs
 
+## Deploy Package to PyPI
+```Bash
+    pip install cookiecutter twine
+    git clone https://github.com/kragniz/cookiecutter-pypackage-minimal.git
+    cookiecutter cookiecutter-pypackage-minimal/
+
+    cd DIRECTORY_NAME
+    python setup.py sdist bdist_wheel
+    twine upload --skip-existing dist/*
+```
+
+## Lambda Layers
+21 June 2021
+
+- [AWS Lambda Layers Python Youtube](https://www.youtube.com/watch?v=cz8QjmgfGHc)
+
+
 ## Pipenv 
 21 Apr 2021
 
