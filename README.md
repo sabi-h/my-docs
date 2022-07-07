@@ -1,5 +1,19 @@
 # python-docs
 
+## npm
+
+#### Learning Resources
+- [Npm tutorials by codevolution](https://www.youtube.com/watch?v=6fj0cpmMiVg&list=PLC3y8-rFHvwhgWwm5J3KqzX47n7dwWNrq&ab_channel=Codevolution)
+
+
+#### Create package.json
+`npm init`
+
+
+#### Install packages in package.json
+`npm install`
+
+
 ## Deploy Package to PyPI
 ```Bash
     pip install cookiecutter twine
