@@ -1,5 +1,11 @@
 # python-docs
 
+## Git
+
+### Git logs with graph
+git log --all --graph
+
+
 ## npm
 
 #### Learning Resources
@@ -101,4 +107,13 @@ Once you're done testing, you want to specify exact version of library, for prod
 - Don't have to specify library version
 - Once a new library version is realeased, you install it and test
 - Once tested and it works, you update the Pipfile.lock and push to production
+
+
+
+## Google Cloud
+
+### Read cloud function execution time from logs
+```
+gcloud functions logs read --project=sixty-odp-bridge-prod bridgetrigger --end-time=2022-08-10 --limit=1000 | grep  "Function execution took" | cut -c86-999 | cut -f1 -dm | sort -r -n | head -10
+```
 
