@@ -1,18 +1,4 @@
-#### Set gcloud account
-gcloud auth list
-gcloud config set account `ACCOUNT`
-
-
-#### Set default gcloud project
-gcloud config set project omega-s
-
-
-#### View default gcloud project
-gcloud config list --format 'value(core.project)' 2>/dev/null
-
-### Manage gcloud cli Config
-
-#### Create configuration
+#### Create gcloud CLI configuration
 gcloud config configurations create [config-name]
 
 
@@ -20,16 +6,18 @@ gcloud config configurations create [config-name]
 gcloud config configurations activate [config-name]
 
 
-#### Set project
-gcloud config set project my-project-id
-
-
 #### Initialise account
 gcloud auth login
 
 
-#### Set account
+#### Set gcloud account
+gcloud auth list
 gcloud config set account [my-account@example.com]
 
 
---- done
+#### Set default gcloud project (not recommended)
+gcloud config set project my-project-id
+
+
+#### View default gcloud project
+gcloud config list --format 'value(core.project)' 2>/dev/null
