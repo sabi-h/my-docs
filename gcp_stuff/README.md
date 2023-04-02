@@ -19,5 +19,8 @@ gcloud config set account [my-account@example.com]
 gcloud config set project my-project-id
 
 
+#### Set region
+
+
 #### View default gcloud project
 gcloud config list --format 'value(core.project)' 2>/dev/null

@@ -117,3 +117,23 @@ Once you're done testing, you want to specify exact version of library, for prod
 gcloud functions logs read --project=sixty-odp-bridge-prod bridgetrigger --end-time=2022-08-10 --limit=1000 | grep  "Function execution took" | cut -c86-999 | cut -f1 -dm | sort -r -n | head -10
 ```
 
+
+### PostgreSQL
+
+#### Go inside postgres
+    psql -U postgres
+
+
+#### List all postgres users
+    \du
+
+
+#### Create Database
+    create database test;
+
+
+#### List database
+    \l
+
+#### Connect to database
+    \c test
