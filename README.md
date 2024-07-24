@@ -124,6 +124,10 @@ gcloud functions logs read --project=sixty-odp-bridge-prod bridgetrigger --end-t
     psql -U postgres
 
 
+#### list all commands
+    help
+
+
 #### List all postgres users
     \du
 

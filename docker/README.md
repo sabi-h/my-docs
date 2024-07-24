@@ -3,7 +3,7 @@
 
 
 #### Run docker image
-	docker run --name omega-postgres -e POSTGRES_PASSWORD=admin -d postgres:alpine
+	docker run --name omega-postgres -e POSTGRES_PASSWORD=iiposju -p 5432:5432 -d postgres:alpine
 
 
 #### Bash into container
